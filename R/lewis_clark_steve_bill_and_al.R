@@ -48,9 +48,38 @@ rm(list=ls());cat('\f')
 
 
 # data----
+df.goodguys <- data.frame(type   = "goodguy", 
+                          g_name = c("online_fren", "irl_fren"))
 
 df.villians <- data.frame(type   = "villian", 
-                          v_name = c("trolls", "cyberbullying", ""))
+                          v_name = c("trolls", "cyberbullying", "fake_news", 
+                                     "catfish_predators", 
+                                     "boss"))
 
 df.quest    <- data.frame(type   = "quest", 
-                          q_name = c("my_first_email"))
+                          q_name = c("first_email_account", 
+                                     "first_cellphone", 
+                                     "cracked_screen", 
+                                     "pickpocket", 
+                                     "social_media_post__bullying", 
+                                     "social_media_post__uplifting", 
+                                     "social_media_post__you_post", 
+                                     "last-minute paper due", 
+                                     "borrow_the_family_credit_card"))
+
+df.sidequest_of_good <- data.frame(type    = "sidequest_of_good", 
+                                   sq_name = c("message fren", "adopt kitten", 
+                                               "saw_something_said_something"), 
+                                   cost    = c(-2, -10, 0),
+                                   boost   = c(10, 50, 1000))
+
+df.powers   <- data.frame(type   = "powers", 
+                          p_name = c("meme", "VPN", "anonymity", "ai_engines", 
+                                     "remote_work", "side_hustles", "emotions"))
+
+
+# the jouney ----
+
+daynum <- 0
+
+
